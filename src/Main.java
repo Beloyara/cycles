@@ -2,15 +2,15 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        for (int i = 0; i < 10; i ++) {
+        for (int i = 0; i < 10; i++) {
             System.out.println("Итерация цикла" + i);
         }
 
-        for (int i = 1; i <= 10; i ++) {
+        for (int i = 1; i <= 10; i++) {
             System.out.println("Итерация цикла " + i);
         }
 
-        for (int i = 10; i >= 1; i --) {
+        for (int i = 10; i >= 1; i--) {
             System.out.println("Итерация цикла " + i);
         }
 
@@ -18,7 +18,7 @@ public class Main {
             System.out.println("Итерация цикла " + i);
         }
 
-        for (int i = 10; i >= -10; i --) {
+        for (int i = 10; i >= -10; i--) {
             System.out.println("Итерация цикла " + i);
         }
 
@@ -40,22 +40,28 @@ public class Main {
         int salaryWithPenny = salary * 100;
         int totalWithPenny = 0;
 
-        for (int i = 1; i <= 12; i ++) {
+        for (int i = 1; i <= 12; i++) {
             totalWithPenny = totalWithPenny + totalWithPenny / 100;
             totalWithPenny = totalWithPenny + salaryWithPenny;
 
             total = totalWithPenny / 100;
             System.out.println("Месяц " + i + " Итого " + total);
         }
+
         System.out.println(total);
 
         int capital = 29000;
-        int totalcapital = 0;
+        double totalCapital = 0;
 
-        for (int i = 1; i <= 12; i ++) {
-            totalcapital = totalcapital + capital;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + totalcapital + " рублей");
+        int capitalWithPenny = capital * 100;
+        int totalCapitalWithPenny = 0;
+
+        for (int i = 1; i <= 12; i++) {
+            totalCapitalWithPenny = totalCapitalWithPenny + totalCapitalWithPenny / 100;
+            totalCapitalWithPenny = totalCapitalWithPenny + capitalWithPenny;
+
+            totalCapital = totalCapitalWithPenny / 100;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + totalCapital + " рублей");
         }
-
     }
 }
