@@ -63,5 +63,9 @@ public class Main {
             totalCapital = totalCapitalWithPenny / 100;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + totalCapital + " рублей");
         }
+        for (int i = 1; i <= 10; i ++) {
+            int f = 2 * i;
+            System.out.println("2 * " + i + " = " + f);
+        }
     }
 }
